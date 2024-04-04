@@ -26,16 +26,16 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./jq
     permissions:
       contents: read
       packages: write
       # This is used to complete the identity challenge
       # with sigstore/fulcio when running outside of PRs.
       id-token: write
-
-    defaults:
-      run:
-        working-directory: ./jq
 
     steps:
       - name: Checkout repository
