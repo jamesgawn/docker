@@ -20,8 +20,8 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  FOLDER: ./jq
-  IMAGE_NAME: jamesgawn/jq
+  FOLDER: ./wrangler
+  IMAGE_NAME: jamesgawn/wrangler
 
 
 jobs:
